@@ -14,8 +14,8 @@ View(groupedmean_df)     #To view the 2nd dataframe
 write.table(merged_dtframe,"tidy_ds1.txt",row.name=FALSE)       #To save the 1st dataframe as a textfile
 write.table(groupedmean_df,"tidy_ds2.txt",row.name=FALSE)       #To save the 2nd dataframe as a textfile
 ```
+* Thus, we have got the two dataframes in two text files. The first and second texftfile would take nearly 8.3 MB and 225 KB of disk-space respectively.
 * You might notice that the 2nd dataframe has 180 entries. It is because we got the combination of all 6 activities and 30 test participants.
-* However, we have got the two dataframes in two text files. The first and second texftfile would take nearly 8.3 MB and 225 KB of disk-space respectively.
 * We can use the following code to retrieve the dataframes anytime from their respective text file. 
 ```
 merged_dtframe <- read.table("tidy_ds1.txt")
