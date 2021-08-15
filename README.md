@@ -3,7 +3,7 @@ Peer-graded Assignment: Getting and Cleaning Data Course Project [https://www.co
 =====================================================================================================================
 This file describes how run_analysis.R script works.
 * This script is written by keeping user convenience in mind.
-* To get the two datasets just run the following two lines of code in any R console.
+* To get the two datasets just run the following first two lines of code in any R console.
 ```
 source("run_analysis.R") #make sure the R script file is in the working directory
 a=main_()                #the main_() function will return a list of 2 dataframes we want
