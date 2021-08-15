@@ -11,7 +11,7 @@ NB: This R script can be run in any directory, as it downloads the zipfile and u
  2. *xtrain*, *ytrain* and *trainsubject* are concatenated by cbind function to create *traindata*.     
  3. Read X_test.txt, y_test.txt and subject_test.txt from the "test" folder and store them in *xtest*, *ytest* and *testsubject* variables respectively.  
  4. *xtest*, *ytest* and *testsubject* are concatenated by cbind function to create *testdata*.
- 5.  Concatenate *testdata* to *traindata* to generate a 10299x561 data frame, *alldata*; concatenate *testLabel* to *trainLabel* to generate a 10299x1 data frame, *joinLabel*; concatenate *testSubject* to *trainSubject* to generate a 10299x1 data frame, *joinSubject*.  
+ 5.  Concatenate *testdata* to *traindata* by rbind function to generate a 10299x561 data frame, *alldata*.  
  6. Read the features.txt file and store the data in a variable called *features*. We only extract the measurements on the mean and standard deviation. This results in a 66 indices list. We get a subset of *joinData* with the 66 corresponding columns.  
  7. Clean the column names of the subset. We remove spaces, brackets, hyphens,and other symbols in the names and change the case to lower.
  8. The shortenings are removed and replaced with their full terms like "time","frequency", "accelerometer", "gyroscope", etc.   
